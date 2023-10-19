@@ -5,7 +5,7 @@ local b = null_ls.builtins
 local sources = {
 
   -- webdev stuff
-  b.formatting.prettier,
+  b.formatting.eslint,
   b.diagnostics.eslint,
 
   -- Lua
