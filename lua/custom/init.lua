@@ -6,10 +6,9 @@ local autocmd = vim.api.nvim_create_autocmd
 --   command = "tabdo wincmd =",
 -- })
 
-
 autocmd("BufWritePre", {
   pattern = "*",
   callback = function()
-    vim.lsp.buf.format { async = true }
+    vim.lsp.buf.format { async = false, timeout_ms = 5000 }
   end,
 })
