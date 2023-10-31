@@ -6,8 +6,8 @@ local sources = {
 
   -- webdev stuff
   b.formatting.prettier,
-  b.formatting.eslint,
-  b.diagnostics.eslint,
+  b.formatting.eslint_d,
+  b.diagnostics.eslint_d,
 
   -- Lua
   b.formatting.stylua,
