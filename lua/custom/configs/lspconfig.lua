@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "tsserver", "clangd", "tailwindcss" }
+local servers = { "html", "tsserver", "clangd" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -15,6 +15,9 @@ end
 
 --
 -- lspconfig.pyright.setup { blabla }
+--
+-- Settings info here:
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#cssls
 
 lspconfig.cssls.setup {
   on_attach = on_attach,
@@ -24,6 +27,31 @@ lspconfig.cssls.setup {
       validate = true,
       lint = {
         unknownAtRules = "ignore",
+      },
+    },
+  },
+}
+
+lspconfig.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    tailwindCSS = {
+      validate = true,
+      lint = {
+        cssConflict = "warning",
+        invalidApply = "error",
+        invalidConfigPath = "error",
+        invalidScreen = "error",
+        invalidTailwindDirective = "error",
+        invalidVariant = "error",
+        recommendedVariantOrder = "warning",
+      },
+      classAttributes = {
+        "class",
+        "className",
+        "ngClass",
+        ".*Styles*",
       },
     },
   },
