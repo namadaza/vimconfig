@@ -60,6 +60,11 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
+
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
 }
 
 return plugins
