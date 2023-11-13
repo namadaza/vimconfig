@@ -65,6 +65,13 @@ local plugins = {
     "github/copilot.vim",
     lazy = false,
   },
+  {
+    "ThePrimeagen/harpoon",
+    lazy = false,
+    init = function()
+      require("core.utils").load_mappings "harpoon"
+    end,
+  },
 }
 
 return plugins
