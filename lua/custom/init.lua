@@ -24,3 +24,5 @@ vim.api.nvim_create_user_command("DiagnosticToggle", function()
 end, { desc = "toggle diagnostic" })
 
 vim.g.copilot_assume_mapped = true
+
+vim.opt.relativenumber = true
