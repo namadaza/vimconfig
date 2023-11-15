@@ -26,25 +26,25 @@ M.harpoon = {
       end,
       "View harpoon menu",
     },
-    ["!"] = {
+    ["<leader>1"] = {
       function()
         require("harpoon.ui").nav_file(1)
       end,
       "Go to harpoon mark 1",
     },
-    ["@"] = {
+    ["<leader>2"] = {
       function()
         require("harpoon.ui").nav_file(2)
       end,
       "Go to harpoon mark 2",
     },
-    ["#"] = {
+    ["<leader>3"] = {
       function()
         require("harpoon.ui").nav_file(3)
       end,
       "Go to harpoon mark 3",
     },
-    ["$"] = {
+    ["<leader>4"] = {
       function()
         require("harpoon.ui").nav_file(4)
       end,
