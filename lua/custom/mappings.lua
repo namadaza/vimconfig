@@ -48,7 +48,13 @@ M.harpoon = {
       function()
         require("harpoon.ui").nav_file(4)
       end,
-      "Go to harpoon mark 3",
+      "Go to harpoon mark 4",
+    },
+    ["<leader>5"] = {
+      function()
+        require("harpoon.ui").nav_file(5)
+      end,
+      "Go to harpoon mark 5",
     },
   },
 }
