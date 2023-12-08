@@ -12,7 +12,7 @@ M.ui = {
   hl_add = highlights.add,
 
   tabufline = {
-    enabled = false,
+    enabled = true,
   },
   statusline = {
     overriden_modules = function(modules)
@@ -21,7 +21,7 @@ M.ui = {
       -- define the somefunction anywhwere in your custom dir, just call it well!
       -- modules[2] = somefunction()
       modules[3] = (function()
-        return "%f"
+        return "%#St_LspProgress#" .. "%f"
       end)()
 
       -- Second option
