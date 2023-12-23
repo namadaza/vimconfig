@@ -32,3 +32,5 @@ vim.filetype.add {
     mdx = "mdx",
   },
 }
+
+vim.treesitter.language.register("markdown", "mdx")
