@@ -42,9 +42,14 @@ M.mason = {
 }
 
 -- git support in nvimtree
+-- https://raw.githubusercontent.com/kyazdani42/nvim-tree.lua/master/doc/nvim-tree-lua.txt
 M.nvimtree = {
   git = {
     enable = true,
+  },
+
+  sort = {
+    sorter = "name",
   },
 
   renderer = {
