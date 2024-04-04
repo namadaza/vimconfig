@@ -12,14 +12,14 @@ local sources = {
       "less",
     },
   },
-  b.formatting.eslint_d.with {
+  b.formatting.eslint.with {
     disabled_filetypes = {
       "css",
       "scss",
       "less",
     },
   },
-  b.diagnostics.eslint_d.with {
+  b.diagnostics.eslint.with {
     disabled_filetypes = {
       "css",
       "scss",

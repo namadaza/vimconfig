@@ -7,7 +7,7 @@
 3. Make sure terminal has Nerd font set
 4. Install ripgrep `brew install ripgrep`
 5. Install the tailwindcss-language-server `npm i -g tailwindcss-language-server`
-6. Install eslint_d `npm install -g eslint_d`
+6. Install eslint `npm install -g eslint` - NOTE, this may be slow, try `eslint_d` if having perf issues
 7. Instal prettier `npm install -g prettier`
 
 ### Useful Commands
