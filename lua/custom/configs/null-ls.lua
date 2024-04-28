@@ -34,7 +34,11 @@ local sources = {
   -- cpp
   b.formatting.clang_format,
 
-  cspell.diagnostics,
+  cspell.diagnostics.with {
+    disabled_filetypes = {
+      "NvimTree",
+    },
+  },
   cspell.code_actions,
 }
 
