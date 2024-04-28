@@ -72,6 +72,10 @@ local plugins = {
       require("core.utils").load_mappings "harpoon"
     end,
   },
+  {
+    "davidmh/cspell.nvim",
+    lazy = false,
+  },
 }
 
 return plugins

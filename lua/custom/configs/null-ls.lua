@@ -1,4 +1,5 @@
 local null_ls = require "null-ls"
+local cspell = require "cspell"
 
 local b = null_ls.builtins
 
@@ -32,6 +33,9 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format,
+
+  cspell.diagnostics,
+  cspell.code_actions,
 }
 
 null_ls.setup {
