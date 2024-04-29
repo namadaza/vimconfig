@@ -34,6 +34,10 @@ local sources = {
   -- cpp
   b.formatting.clang_format,
 
+  -- terraform
+  b.formatting.terraform_fmt,
+
+  -- spell check
   cspell.diagnostics.with {
     disabled_filetypes = {
       "NvimTree",
