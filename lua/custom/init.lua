@@ -25,7 +25,7 @@ end, { desc = "toggle diagnostic" })
 
 vim.g.copilot_assume_mapped = true
 
-vim.g.copilot_filetypes = { markdown = true }
+vim.g.copilot_filetypes = { markdown = true, terraform = true }
 
 vim.opt.relativenumber = true
 

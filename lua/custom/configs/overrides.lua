@@ -12,6 +12,8 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "terraform",
+    "terraform-vars",
   },
   indent = {
     enable = true,
@@ -34,6 +36,9 @@ M.mason = {
     "deno",
     "prettier",
     "tailwindcss-language-server",
+
+    -- terraform
+    "terraform-ls",
 
     -- c/cpp stuff
     "clangd",

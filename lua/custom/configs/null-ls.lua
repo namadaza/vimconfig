@@ -41,6 +41,8 @@ local sources = {
   cspell.diagnostics.with {
     disabled_filetypes = {
       "NvimTree",
+      "terraform",
+      "terraform-vars",
     },
   },
   cspell.code_actions,
